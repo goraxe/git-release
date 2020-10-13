@@ -1,6 +1,7 @@
 const {defaultTo, castArray} = require('lodash');
 const verifyGit = require('./lib/verify');
 const prepareGit = require('./lib/prepare');
+const publishGit = require('./lib/publish');
 
 let verified;
 
@@ -28,4 +29,13 @@ async function prepare(pluginConfig, context) {
   await prepareGit(pluginConfig, context);
 }
 
-module.exports = {verifyConditions, prepare};
+async function publish(pluginConfig, context) {
+  if (!verified) {
+    verifyGit(pluginConfig);
+    verified = true;
+  }
+
+  await publishGit(pluginConfig, context);
+}
+
+module.exports = {verifyConditions, prepare, publish};
