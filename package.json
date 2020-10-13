@@ -1,19 +1,20 @@
 {
-  "name": "@semantic-release/git",
-  "description": "semantic-release plugin to commit release assets to the project's git repository",
+  "name": "@goraxe/git-release",
+  "description": "a fork of semantic-release plugin to commit release assets to the project's git repository",
   "version": "0.0.0-development",
-  "author": "Pierre Vanduynslager (https://github.com/pvdlg)",
+  "author": "goraxe (https://github.com/goraxe)",
   "ava": {
     "files": [
       "test/**/*.test.js"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
-    "url": "https://github.com/semantic-release/git/issues"
+    "url": "https://github.com/goraxe/git-rlease/issues"
   },
   "contributors": [
-    "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
-    "Gregor Martynus (https://twitter.com/gr2m)"
   ],
   "dependencies": {
     "@semantic-release/error": "^2.1.0",
@@ -46,7 +47,7 @@
     "lib",
     "index.js"
   ],
-  "homepage": "https://github.com/semantic-release/git#readme",
+  "homepage": "https://github.com/goraxe/git-release#readme",
   "keywords": [
     "changelog",
     "commit",

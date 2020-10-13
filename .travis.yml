@@ -1,8 +1,19 @@
-version: ~> 1.0
+language: node_js
+node_js:
+  - v13
+  - v12
+  - v10
+after_script: cat ./coverage/lcov.info | coveralls; cat ./coverage/lcov.info
 
-import:
-  - semantic-release/semantic-release:.travis/node.yml
-  - semantic-release/semantic-release:.travis/node-versions.yml
-  - semantic-release/semantic-release:.travis/semantic-release.yml
-  - semantic-release/semantic-release:.travis/greenkeeper.yml
-  - semantic-release/semantic-release:.travis/codecov.yml
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - yarn run semantic-release
