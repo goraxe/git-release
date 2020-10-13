@@ -1,7 +1,7 @@
 {
   "name": "@goraxe/git-release",
   "description": "a fork of semantic-release plugin to commit release assets to the project's git repository",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "author": "goraxe (https://github.com/goraxe)",
   "ava": {
     "files": [
@@ -14,8 +14,7 @@
   "bugs": {
     "url": "https://github.com/goraxe/git-rlease/issues"
   },
-  "contributors": [
-  ],
+  "contributors": [],
   "dependencies": {
     "@semantic-release/error": "^2.1.0",
     "aggregate-error": "^3.0.0",
@@ -80,9 +79,6 @@
   "prettier": {
     "printWidth": 120,
     "trailingComma": "es5"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "repository": {
     "type": "git",
