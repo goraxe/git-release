@@ -33,7 +33,7 @@
     "codecov": "^3.0.0",
     "file-url": "^3.0.0",
     "fs-extra": "^9.0.0",
-    "get-stream": "^5.0.0",
+    "get-stream": "^8.0.0",
     "git-log-parser": "^1.2.0",
     "nyc": "^15.0.0",
     "semantic-release": "^17.0.0",
