@@ -5,12 +5,12 @@
     {
       "groupName": "asdf",
       "matchManagers": ["asdf"],
-      "automerge": false
+      "automerge": true
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
-      "automerge": false
+      "automerge": true
     }
   ],
 }
