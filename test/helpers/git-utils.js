@@ -144,7 +144,7 @@ async function gitDetachedHead(repositoryUrl, head) {
 
   await execa('git', ['init'], {cwd});
   await execa('git', ['remote', 'add', 'origin', repositoryUrl], {cwd});
-  await execa('git', ['fetch', repositoryUrl], {cwd});
+  await execa('git', ['fetch', 'origin'], {cwd});
   await execa('git', ['checkout', head], {cwd});
   return cwd;
 }
@@ -158,7 +158,8 @@ async function gitDetachedHead(repositoryUrl, head) {
  * @return {String} The HEAD sha of the remote repository.
  */
 async function gitRemoteHead(repositoryUrl, execaOptions) {
-  return (await execa('git', ['ls-remote', repositoryUrl, 'HEAD'], execaOptions)).stdout
+  const {stdout} = await execa('git', ['ls-remote', repositoryUrl], execaOptions);
+  return stdout
     .split('\n')
     .filter(head => Boolean(head))
     .map(head => head.match(/^(?<head>\S+)/)[1])[0];
