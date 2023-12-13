@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/goraxe/git-release/compare/v1.0.0...v1.0.1) (2023-12-13)
+
+
+### Bug Fixes
+
+* **ci:** add git config for tests ([bb30408](https://github.com/goraxe/git-release/commit/bb304082708f57a542d5b783a6da1a4333927b3f))
+* **ci:** get tests passing again ([a17de63](https://github.com/goraxe/git-release/commit/a17de63ce13f39dc91053f6916e804c3af287236))
+* **ci:** remove build step ([b4c6e9a](https://github.com/goraxe/git-release/commit/b4c6e9a4f0850519e04624804c782517f3a67d93))
+
 # 1.0.0 (2020-10-13)
 
 
