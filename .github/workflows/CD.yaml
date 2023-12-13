@@ -33,7 +33,7 @@ jobs:
           git config --global user.name "Your Name"
       - run: yarn test
   release:
-    depends: ['test', 'pre-commit']
+    needs: ['test', 'pre-commit']
     runs-on: ubuntu-lates
     steps:
       - uses: actions/checkout@v4
