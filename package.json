@@ -1,7 +1,7 @@
 {
   "name": "@goraxe/git-release",
   "description": "a fork of semantic-release plugin to commit release assets to the project's git repository",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "goraxe (https://github.com/goraxe)",
   "ava": {
     "files": [
