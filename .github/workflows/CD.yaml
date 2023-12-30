@@ -1,10 +1,9 @@
-
 name: CD
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
   push:
-    branches: ["master"]
+    branches: [ "master" ]
 
 # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
 jobs:
@@ -23,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: asdf-vm/actions/install@v3.0.2
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
@@ -34,7 +34,7 @@ jobs:
           git config --global user.name "Your Name"
       - run: yarn test
   release:
-    needs: ['test', 'pre-commit']
+    needs: [ 'test', 'pre-commit' ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
