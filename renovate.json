@@ -8,7 +8,7 @@
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["major", "digest"],
+      "matchUpdateTypes": ["patch", "minor", "major", "digest"],
       "matchDepTypes": ["devDependencies", "action"],
       "automerge": true
     },
