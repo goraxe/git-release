@@ -1,26 +1,30 @@
-const {defaultTo, castArray} = require('lodash');
-const verifyGit = require('./lib/verify');
-const prepareGit = require('./lib/prepare');
-const publishGit = require('./lib/publish');
+import { castArray, defaultTo } from "lodash-es";
+import verifyGit from "./lib/verify.js";
+import prepareGit from "./lib/prepare.js";
+import publishGit from "./lib/publish.js";
 
 let verified;
 
-function verifyConditions(pluginConfig, context) {
-  const {options} = context;
+export function verifyConditions(pluginConfig, context) {
+  const { options } = context;
   // If the Git prepare plugin is used and has `assets` or `message` configured, validate them now in order to prevent any release if the configuration is wrong
   if (options.prepare) {
-    const preparePlugin =
-      castArray(options.prepare).find(config => config.path && config.path === '@semantic-release/git') || {};
+    const preparePlugin = castArray(options.prepare).find((config) =>
+      config.path && config.path === "@semantic-release/git"
+    ) || {};
 
     pluginConfig.assets = defaultTo(pluginConfig.assets, preparePlugin.assets);
-    pluginConfig.message = defaultTo(pluginConfig.message, preparePlugin.message);
+    pluginConfig.message = defaultTo(
+      pluginConfig.message,
+      preparePlugin.message,
+    );
   }
 
   verifyGit(pluginConfig);
   verified = true;
 }
 
-async function prepare(pluginConfig, context) {
+export async function prepare(pluginConfig, context) {
   if (!verified) {
     verifyGit(pluginConfig);
     verified = true;
@@ -29,7 +33,7 @@ async function prepare(pluginConfig, context) {
   await prepareGit(pluginConfig, context);
 }
 
-async function publish(pluginConfig, context) {
+export async function publish(pluginConfig, context) {
   if (!verified) {
     verifyGit(pluginConfig);
     verified = true;
@@ -37,5 +41,3 @@ async function publish(pluginConfig, context) {
 
   await publishGit(pluginConfig, context);
 }
-
-module.exports = {verifyConditions, prepare, publish};

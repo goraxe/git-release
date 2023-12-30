@@ -2,6 +2,7 @@
   "name": "@goraxe/git-release",
   "description": "a fork of semantic-release plugin to commit release assets to the project's git repository",
   "version": "1.0.1",
+  "type": "module",
   "author": "goraxe (https://github.com/goraxe)",
   "ava": {
     "files": [
@@ -21,7 +22,7 @@
     "debug": "^4.0.0",
     "dir-glob": "^3.0.0",
     "execa": "^4.0.0",
-    "lodash": "^4.17.4",
+    "lodash-es": "^4.17.4",
     "micromatch": "^4.0.0",
     "p-reduce": "^2.0.0"
   },
