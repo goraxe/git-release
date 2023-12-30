@@ -28,4 +28,7 @@ jobs:
           node-version: '20.x'
           cache: 'pnpm'
       - run: pnpm install
+      - run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
       - run: pnpm test
