@@ -2,11 +2,9 @@ name: CI
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
-  push:
-    branches: ["*/*"]
   pull_request:
 
-# There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
+    # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
@@ -23,13 +21,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: asdf-vm/actions/install@v3.0.2
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          cache: 'yarn'
-      - run: yarn install
+          cache: 'pnpm'
+      - run: pnpm install
       - run: |
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
-      - run: yarn test
+      - run: pnpm test
