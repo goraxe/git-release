@@ -27,8 +27,8 @@ dependencies:
     specifier: ^4.0.0
     version: 4.0.5
   p-reduce:
-    specifier: ^2.0.0
-    version: 2.1.0
+    specifier: ^3.0.0
+    version: 3.0.0
 
 devDependencies:
   '@semantic-release/changelog':
@@ -4470,11 +4470,11 @@ packages:
   /p-reduce@2.1.0:
     resolution: {integrity: sha512-2USApvnsutq8uoxZBGbbWM0JIYLiEMJ9RlaN7fAzVNb9OZN0SHjjTTfIcb667XynS5Y1VhwDJVDa72TnPzAYWw==}
     engines: {node: '>=8'}
+    dev: true
 
   /p-reduce@3.0.0:
     resolution: {integrity: sha512-xsrIUgI0Kn6iyDYm9StOpOeK29XM1aboGji26+QEortiFST1hGZaUQOLhtEbqHErPpGW/aSz6allwK2qcptp0Q==}
     engines: {node: '>=12'}
-    dev: true
 
   /p-try@1.0.0:
     resolution: {integrity: sha512-U1etNYuMJoIz3ZXSrrySFjsXQTWOx2/jdi86L+2pRvph/qMKL6sbcCYdH23fqsbm8TH2Gn0OybpT4eSFlCVHww==}
