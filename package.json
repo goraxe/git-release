@@ -38,7 +38,7 @@
     "get-stream": "^5.0.0",
     "git-log-parser": "^1.2.0",
     "nyc": "^15.0.0",
-    "semantic-release": "23.0.2",
+    "semantic-release": "23.0.3",
     "sinon": "^17.0.0",
     "tempy": "^0.7.0",
     "xo": "0.58.0"
