@@ -71,7 +71,7 @@ importers:
         version: 23.1.1(typescript@5.5.4)
       sinon:
         specifier: ^19.0.0
-        version: 19.0.0
+        version: 19.0.1
       tempy:
         specifier: ^0.7.0
         version: 0.7.1
@@ -1113,11 +1113,11 @@ packages:
   electron-to-chromium@1.4.788:
     resolution: {integrity: sha512-ubp5+Ev/VV8KuRoWnfP2QF2Bg+O2ZFdb49DiiNbz2VmgkIqrnyYaqIOqj8A6K/3p1xV0QcU5hBQ1+BmB6ot1OA==}
 
-  electron-to-chromium@1.5.19:
-    resolution: {integrity: sha512-kpLJJi3zxTR1U828P+LIUDZ5ohixyo68/IcYOHLqnbTPr/wdgn4i1ECvmALN9E16JPA6cvCG5UG79gVwVdEK5w==}
-
   electron-to-chromium@1.5.2:
     resolution: {integrity: sha512-kc4r3U3V3WLaaZqThjYz/Y6z8tJe+7K0bbjUVo3i+LWIypVdMx5nXCkwRe6SWbY6ILqLdc1rKcKmr3HoH7wjSQ==}
+
+  electron-to-chromium@1.5.22:
+    resolution: {integrity: sha512-tKYm5YHPU1djz0O+CGJ+oJIvimtsCcwR2Z9w7Skh08lUdyzXY5djods3q+z2JkWdb7tCcmM//eVavSRAiaPRNg==}
 
   emittery@1.0.3:
     resolution: {integrity: sha512-tJdCJitoy2lrC2ldJcqN4vkqJ00lT+tOWNT1hBJjO/3FDMJa5TTIiYGCKGkn/WfCyOzUMObeohbVTj00fhiLiA==}
@@ -2355,8 +2355,8 @@ packages:
   nerf-dart@1.0.0:
     resolution: {integrity: sha512-EZSPZB70jiVsivaBLYDCyntd5eH8NTSMOn3rB+HxwdmKThGELLdYv8qVIMWvZEFy9w8ZZpW9h9OB32l1rGtj7g==}
 
-  nise@6.1.0:
-    resolution: {integrity: sha512-CmZZZxyoEFoA/GkIyd1EjzRw4WWOpsaIpJ9xSS4Ymi8UEXA81Ml9uk8VVi4nisuRKyqM6rHHXZSDkrtuL+K4uA==}
+  nise@6.1.1:
+    resolution: {integrity: sha512-aMSAzLVY7LyeM60gvBS423nBmIPP+Wy7St7hsb+8/fc1HmeoHJfLO8CKse4u3BtOZvQLJghYPI2i/1WZrEj5/g==}
 
   node-emoji@2.1.3:
     resolution: {integrity: sha512-E2WEOVsgs7O16zsURJ/eH8BqhF029wGpEOnv7Urwdo2wmQanOACwJQh0devF9D9RhoZru0+9JXIS0dBXIAz+lA==}
@@ -2975,8 +2975,8 @@ packages:
     resolution: {integrity: sha512-iuh+gPf28RkltuJC7W5MRi6XAjTDCAPC/prJUpQoG4vIP3MJZ+GTydVnodXA7pwvTKb2cA0m9OFZW/cdWy/I/w==}
     engines: {node: '>=6'}
 
-  sinon@19.0.0:
-    resolution: {integrity: sha512-YwPCB6NgZDam4hsEWe0mzTNbtKWFUtnpMSSQR+CmhWtVCkMqynwl9d7AjmfE7pPlGCXkHSi80mPHy70RTsAijg==}
+  sinon@19.0.1:
+    resolution: {integrity: sha512-ApJ40RwBpAh/Gi/iR+6x0blGleY1lOWkiTTyxmBE2KBWRvoEa2QNAzB0d7FoiT1C19GIq6bDcOYZAISnE2Cr0Q==}
 
   skin-tone@2.0.0:
     resolution: {integrity: sha512-kUMbT1oBJCpgrnKoSr0o6wPtvRWT9W9UKvGLwfJYO2WuahZRHOpEyL1ckyMGgMWh0UdpmaoFqKKD29WTomNEGA==}
@@ -4469,7 +4469,7 @@ snapshots:
   browserslist@4.23.3:
     dependencies:
       caniuse-lite: 1.0.30001660
-      electron-to-chromium: 1.5.19
+      electron-to-chromium: 1.5.22
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
 
@@ -4797,9 +4797,9 @@ snapshots:
 
   electron-to-chromium@1.4.788: {}
 
-  electron-to-chromium@1.5.19: {}
-
   electron-to-chromium@1.5.2: {}
+
+  electron-to-chromium@1.5.22: {}
 
   emittery@1.0.3: {}
 
@@ -4956,12 +4956,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1)(webpack@5.89.0):
+  eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0):
     dependencies:
       array.prototype.find: 2.2.2
       debug: 3.2.7
       enhanced-resolve: 0.9.1
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-webpack@0.13.8)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0))(eslint@8.57.0)
       find-root: 1.1.0
       hasown: 2.0.0
       interpret: 1.4.0
@@ -4974,14 +4974,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1)(webpack@5.89.0))(eslint@8.57.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0))(eslint@8.57.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 7.17.0(eslint@8.57.0)(typescript@5.5.4)
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-webpack: 0.13.8(eslint-plugin-import@2.29.1)(webpack@5.89.0)
+      eslint-import-resolver-webpack: 0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -5010,7 +5010,7 @@ snapshots:
       eslint: 8.57.0
       ignore: 5.3.1
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-webpack@0.13.8)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0))(eslint@8.57.0):
     dependencies:
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.4
@@ -5020,7 +5020,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1)(webpack@5.89.0))(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0))(eslint@8.57.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -6119,7 +6119,7 @@ snapshots:
 
   nerf-dart@1.0.0: {}
 
-  nise@6.1.0:
+  nise@6.1.1:
     dependencies:
       '@sinonjs/commons': 3.0.1
       '@sinonjs/fake-timers': 13.0.1
@@ -6716,13 +6716,13 @@ snapshots:
       figures: 2.0.0
       pkg-conf: 2.1.0
 
-  sinon@19.0.0:
+  sinon@19.0.1:
     dependencies:
       '@sinonjs/commons': 3.0.1
       '@sinonjs/fake-timers': 13.0.1
       '@sinonjs/samsam': 8.0.2
       diff: 7.0.0
-      nise: 6.1.0
+      nise: 6.1.1
       supports-color: 7.2.0
 
   skin-tone@2.0.0:
@@ -7253,10 +7253,10 @@ snapshots:
       eslint-config-xo: 0.45.0(eslint@8.57.0)
       eslint-config-xo-typescript: 5.0.0(@typescript-eslint/eslint-plugin@7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4))(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
       eslint-formatter-pretty: 6.0.1
-      eslint-import-resolver-webpack: 0.13.8(eslint-plugin-import@2.29.1)(webpack@5.89.0)
+      eslint-import-resolver-webpack: 0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0)
       eslint-plugin-ava: 14.0.0(eslint@8.57.0)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-webpack@0.13.8)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-webpack@0.13.8(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(webpack@5.89.0))(eslint@8.57.0)
       eslint-plugin-n: 17.9.0(eslint@8.57.0)
       eslint-plugin-no-use-extend-native: 0.5.0
       eslint-plugin-prettier: 5.2.1(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)
