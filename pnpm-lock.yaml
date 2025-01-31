@@ -58,8 +58,8 @@ importers:
         specifier: ^11.0.0
         version: 11.3.0
       get-stream:
-        specifier: ^5.0.0
-        version: 5.2.0
+        specifier: ^9.0.0
+        version: 9.0.1
       git-log-parser:
         specifier: ^1.2.0
         version: 1.2.1
@@ -2379,6 +2379,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
