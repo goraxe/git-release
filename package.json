@@ -35,7 +35,7 @@
     "conventional-changelog-conventionalcommits": "^9.0.0",
     "file-url": "^4.0.0",
     "fs-extra": "^11.0.0",
-    "get-stream": "^5.0.0",
+    "get-stream": "^9.0.0",
     "git-log-parser": "^1.2.0",
     "nyc": "^17.0.0",
     "semantic-release": "23.1.1",
