@@ -76,8 +76,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.1
       xo:
-        specifier: 1.0.1
-        version: 1.0.1(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0)
+        specifier: 1.0.4
+        version: 1.0.4(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0)
 
 packages:
 
@@ -3688,8 +3688,8 @@ packages:
     resolution: {integrity: sha512-GmqrO8WJ1NuzJ2DrziEI2o57jKAVIQNf8a18W3nCYU3H7PNWqCCVTeH6/NQE93CIllIgQS98rrmVkYgTX9fFJQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  xo@1.0.1:
-    resolution: {integrity: sha512-//OSV9RI1qsp88kwGihwlc+NY7hHmq7b0xz9H1+MFTAdfLiO4wOrO46G9DWKb2DVgAdbDbaKJUf9c074yNmDXA==}
+  xo@1.0.4:
+    resolution: {integrity: sha512-BEQ8x6YYfqPsS5JjHHM162alImJuJZ5EE0UP0RrZsSrKrBGu5TzMutajpNQixspPwF1xDEiXU5nM4x8WVAo4jg==}
     engines: {node: '>=20.17'}
     hasBin: true
     peerDependencies:
@@ -7840,7 +7840,7 @@ snapshots:
       imurmurhash: 0.1.4
       signal-exit: 4.1.0
 
-  xo@1.0.1(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0):
+  xo@1.0.4(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0):
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.5.0(eslint@9.27.0)
       '@sindresorhus/tsconfig': 7.0.0
