@@ -76,8 +76,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.1
       xo:
-        specifier: 1.0.5
-        version: 1.0.5(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0)
+        specifier: 1.1.0
+        version: 1.1.0(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0)
 
 packages:
 
@@ -490,9 +490,6 @@ packages:
 
   '@types/eslint@9.6.1':
     resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
-
-  '@types/estree@1.0.7':
-    resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -3360,10 +3357,6 @@ packages:
     resolution: {integrity: sha512-2pR2ubZSV64f/vqm9eLPz/KOvR9Dm+Co/5ChLgeHl0yEDRc6h5hXHoxEQH8Y5Ljycozd3p1k5TTSVdzYGkPvLw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tapable@2.2.1:
-    resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
-    engines: {node: '>=6'}
-
   tapable@2.2.2:
     resolution: {integrity: sha512-Re10+NauLTMCudc7T5WLFLAwDhQ0JWdrMK+9B2M8zR5hRExKmsRDCBA7/aV/pNJFltmBFO5BAMlQFi/vq3nKOg==}
     engines: {node: '>=6'}
@@ -3686,8 +3679,8 @@ packages:
     resolution: {integrity: sha512-GmqrO8WJ1NuzJ2DrziEI2o57jKAVIQNf8a18W3nCYU3H7PNWqCCVTeH6/NQE93CIllIgQS98rrmVkYgTX9fFJQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  xo@1.0.5:
-    resolution: {integrity: sha512-7eGWuph0NxSroDxDLo2ebXfeP2DrIeUe7L0PPrjzPUEIdFnAfV54Hpnw7QhWzCSLWm99Dn+zz288nltwPIegBQ==}
+  xo@1.1.0:
+    resolution: {integrity: sha512-bolvEHNEV99HkPBOrSRJuH85cMsnOcOJhnoDiaQgj/jFjlPlBpBqt36XlnG3nnZjQtoMySPf+tl4WRKFnN37Nw==}
     engines: {node: '>=20.17'}
     hasBin: true
     peerDependencies:
@@ -4295,7 +4288,7 @@ snapshots:
 
   '@types/eslint@8.56.10':
     dependencies:
-      '@types/estree': 1.0.7
+      '@types/estree': 1.0.8
       '@types/json-schema': 7.0.15
 
   '@types/eslint@9.6.1':
@@ -4303,8 +4296,6 @@ snapshots:
       '@types/estree': 1.0.8
       '@types/json-schema': 7.0.15
     optional: true
-
-  '@types/estree@1.0.7': {}
 
   '@types/estree@1.0.8': {}
 
@@ -4836,7 +4827,6 @@ snapshots:
       electron-to-chromium: 1.5.165
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.0)
-    optional: true
 
   buffer-from@1.1.2:
     optional: true
@@ -4879,8 +4869,7 @@ snapshots:
 
   caniuse-lite@1.0.30001718: {}
 
-  caniuse-lite@1.0.30001721:
-    optional: true
+  caniuse-lite@1.0.30001721: {}
 
   cbor@10.0.3:
     dependencies:
@@ -5064,7 +5053,7 @@ snapshots:
 
   core-js-compat@3.42.0:
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.0
 
   core-util-is@1.0.3: {}
 
@@ -5201,8 +5190,7 @@ snapshots:
 
   electron-to-chromium@1.5.152: {}
 
-  electron-to-chromium@1.5.165:
-    optional: true
+  electron-to-chromium@1.5.165: {}
 
   emittery@1.1.0: {}
 
@@ -5225,7 +5213,7 @@ snapshots:
   enhanced-resolve@5.18.1:
     dependencies:
       graceful-fs: 4.2.11
-      tapable: 2.2.1
+      tapable: 2.2.2
 
   env-ci@11.0.0:
     dependencies:
@@ -5563,7 +5551,7 @@ snapshots:
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.3
-      '@types/estree': 1.0.7
+      '@types/estree': 1.0.8
       '@types/json-schema': 7.0.15
       ajv: 6.12.6
       chalk: 4.1.2
@@ -6634,7 +6622,7 @@ snapshots:
     dependencies:
       hosted-git-info: 7.0.1
       is-core-module: 2.13.1
-      semver: 7.6.0
+      semver: 7.7.2
       validate-npm-package-license: 3.0.4
 
   normalize-url@8.0.0: {}
@@ -7450,10 +7438,7 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.2.4
 
-  tapable@2.2.1: {}
-
-  tapable@2.2.2:
-    optional: true
+  tapable@2.2.2: {}
 
   tar@7.4.3:
     dependencies:
@@ -7694,7 +7679,6 @@ snapshots:
       browserslist: 4.25.0
       escalade: 3.2.0
       picocolors: 1.1.1
-    optional: true
 
   uri-js@4.4.1:
     dependencies:
@@ -7845,7 +7829,7 @@ snapshots:
       imurmurhash: 0.1.4
       signal-exit: 4.1.0
 
-  xo@1.0.5(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0):
+  xo@1.1.0(@types/eslint@9.6.1)(typescript@5.7.3)(webpack@5.89.0):
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.5.0(eslint@9.27.0)
       '@sindresorhus/tsconfig': 7.0.0
