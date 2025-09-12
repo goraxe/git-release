@@ -41,7 +41,7 @@
     "semantic-release": "23.1.1",
     "sinon": "^21.0.0",
     "tempy": "^0.7.0",
-    "xo": "1.1.0"
+    "xo": "1.2.2"
   },
   "engines": {
     "node": ">=10.18"
