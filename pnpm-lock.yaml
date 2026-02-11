@@ -58,8 +58,8 @@ importers:
         specifier: ^11.0.0
         version: 11.3.3
       get-stream:
-        specifier: ^5.0.0
-        version: 5.2.0
+        specifier: ^9.0.0
+        version: 9.0.1
       git-log-parser:
         specifier: ^1.2.0
         version: 1.2.1
